@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ config('app.name', 'WinGatz') }} - @yield('title', __('ui.dashibodi'))</title>
+    <title>{{ config('app.name', 'WingaTZ') }} - @yield('title', __('ui.dashibodi'))</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
