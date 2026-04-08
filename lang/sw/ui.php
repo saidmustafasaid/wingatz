@@ -74,6 +74,14 @@ return [
     'idadi'           => 'Idadi',
     'mapato'          => 'Mapato',
 
+    // Uthibitishaji
+    'ingia'        => 'Ingia',
+    'toka'         => 'Toka',
+    'barua_pepe'   => 'Barua Pepe',
+    'nywila'       => 'Nywila',
+    'nikikumbuke'  => 'Nikikumbuke',
+    'login_gagawa' => 'Taarifa hizi hazifanani na rekodi zetu.',
+
     // Vitendo
     'ongeza'    => 'Ongeza',
     'hariri'    => 'Hariri',

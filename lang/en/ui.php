@@ -74,6 +74,14 @@ return [
     'idadi'           => 'Count',
     'mapato'          => 'Revenue',
 
+    // Auth
+    'ingia'        => 'Sign In',
+    'toka'         => 'Sign Out',
+    'barua_pepe'   => 'Email Address',
+    'nywila'       => 'Password',
+    'nikikumbuke'  => 'Remember me',
+    'login_gagawa' => 'These credentials do not match our records.',
+
     // Actions
     'ongeza'    => 'Add',
     'hariri'    => 'Edit',
