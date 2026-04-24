@@ -22,4 +22,14 @@ class Mteja extends Model
         return $this->hasMany(Swali::class, 'mteja_id');
     }
 
+    public function madeni()
+    {
+        return $this->hasMany(Deni::class, 'mteja_id');
+    }
+
+    public function getDeniHalijaliwiwAttribute(): float
+    {
+        return (float) $this->madeni()->where('aina', 'deni')->where('hali', 'haijalipiwa')->sum('kiasi')
+             - (float) $this->madeni()->where('aina', 'malipo')->sum('kiasi');
+    }
 }

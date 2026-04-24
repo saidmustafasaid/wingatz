@@ -9,7 +9,7 @@ class Uuzaji extends Model
     protected $table = 'mauzo';
 
     protected $fillable = [
-        'bidhaa_id', 'mteja_id', 'bei_halisi', 'bei_iliyouzwa',
+        'bidhaa_id', 'mteja_id', 'idadi', 'bei_halisi', 'bei_iliyouzwa',
         'faida', 'siku_za_kuuza', 'maelezo', 'tarehe_ya_uuzaji',
     ];
 

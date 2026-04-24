@@ -95,4 +95,10 @@ return [
     'uthibitisho_futa' => 'Are you sure you want to delete?',
     'hakuna_rekodi'    => 'No records found.',
     'hatua'           => 'Actions',
+
+    // Notifications
+    'arifa'                => 'Notifications',
+    'hakuna_arifa'         => 'No notifications',
+    'ona_maswali_yote'     => 'See all inquiries →',
+    'bidhaa_imesimamishwa' => 'Product Suspended',
 ];

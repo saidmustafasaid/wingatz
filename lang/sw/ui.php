@@ -95,4 +95,10 @@ return [
     'uthibitisho_futa' => 'Una uhakika unataka kufuta?',
     'hakuna_rekodi'    => 'Hakuna rekodi zilizopatikana.',
     'hatua'           => 'Hatua',
+
+    // Arifa
+    'arifa'                => 'Arifa',
+    'hakuna_arifa'         => 'Hakuna arifa',
+    'ona_maswali_yote'     => 'Ona maswali yote →',
+    'bidhaa_imesimamishwa' => 'Bidhaa Imesimamishwa',
 ];

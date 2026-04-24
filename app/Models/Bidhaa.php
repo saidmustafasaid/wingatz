@@ -9,12 +9,16 @@ class Bidhaa extends Model
     protected $table = 'bidhaa';
 
     protected $fillable = [
-        'jina', 'maelezo', 'picha', 'bei_halisi', 'bei_yangu', 'hali', 'kategoria',
+        'jina', 'maelezo', 'picha', 'bei_halisi', 'bei_yangu', 'bei_jumla',
+        'hali', 'kategoria', 'idadi', 'kitengo', 'idadi_ya_chini',
     ];
 
     protected $casts = [
-        'bei_halisi' => 'decimal:2',
-        'bei_yangu' => 'decimal:2',
+        'bei_halisi'    => 'decimal:2',
+        'bei_yangu'     => 'decimal:2',
+        'bei_jumla'     => 'decimal:2',
+        'idadi'         => 'integer',
+        'idadi_ya_chini'=> 'integer',
     ];
 
     public function getFaidaAttribute(): float
@@ -46,5 +50,21 @@ class Bidhaa extends Model
     public function scopeImeuzwa($query)
     {
         return $query->where('hali', 'imeuzwa');
+    }
+
+    public function scopeStockNdogo($query)
+    {
+        return $query->whereNotNull('idadi_ya_chini')
+                     ->whereColumn('idadi', '<=', 'idadi_ya_chini');
+    }
+
+    public function manunuzi()
+    {
+        return $this->hasMany(Ununuzi::class, 'bidhaa_id');
+    }
+
+    public function getStockNdogoAttribute(): bool
+    {
+        return $this->idadi_ya_chini !== null && $this->idadi <= $this->idadi_ya_chini;
     }
 }

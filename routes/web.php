@@ -8,6 +8,7 @@ use App\Http\Controllers\MauzoController;
 use App\Http\Controllers\MaswalijController;
 use App\Http\Controllers\RipotiController;
 use App\Http\Controllers\LughaController;
+use App\Http\Controllers\NotificationController;
 use Illuminate\Support\Facades\Route;
 
 // Badilisha lugha (public — accessible without login)
@@ -39,4 +40,7 @@ Route::middleware('auth')->group(function () {
 
     // Ripoti (Reports)
     Route::get('/ripoti', [RipotiController::class, 'index'])->name('ripoti.index');
+
+    // Notifications
+    Route::get('/notifications', [NotificationController::class, 'index'])->name('notifications.index');
 });
