@@ -9,6 +9,10 @@ use App\Http\Controllers\MaswalijController;
 use App\Http\Controllers\RipotiController;
 use App\Http\Controllers\LughaController;
 use App\Http\Controllers\NotificationController;
+use App\Http\Controllers\WasambazajiController;
+use App\Http\Controllers\ManunuziController;
+use App\Http\Controllers\MatumiziController;
+use App\Http\Controllers\MadeniController;
 use Illuminate\Support\Facades\Route;
 
 // Badilisha lugha (public — accessible without login)
@@ -37,6 +41,19 @@ Route::middleware('auth')->group(function () {
 
     // Maswali (Inquiries)
     Route::resource('maswali', MaswalijController::class)->only(['index', 'create', 'store', 'update', 'destroy']);
+
+    // Wasambazaji (Suppliers)
+    Route::resource('wasambazaji', WasambazajiController::class);
+
+    // Manunuzi (Stock Purchases)
+    Route::resource('manunuzi', ManunuziController::class)->only(['index', 'create', 'store', 'show', 'destroy']);
+
+    // Matumizi (Expenses)
+    Route::resource('matumizi', MatumiziController::class)->only(['index', 'create', 'store', 'edit', 'update', 'destroy']);
+
+    // Madeni (Customer Debts)
+    Route::resource('madeni', MadeniController::class)->only(['index', 'create', 'store', 'destroy']);
+    Route::post('/madeni/{deni}/kulipa', [MadeniController::class, 'markPaid'])->name('madeni.mark_paid');
 
     // Ripoti (Reports)
     Route::get('/ripoti', [RipotiController::class, 'index'])->name('ripoti.index');

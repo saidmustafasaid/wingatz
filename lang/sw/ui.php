@@ -101,4 +101,52 @@ return [
     'hakuna_arifa'         => 'Hakuna arifa',
     'ona_maswali_yote'     => 'Ona maswali yote →',
     'bidhaa_imesimamishwa' => 'Bidhaa Imesimamishwa',
+
+    // Stoku
+    'idadi_bidhaa'         => 'Idadi ya Stoku',
+    'kitengo'              => 'Kitengo',
+    'idadi_ya_chini'       => 'Kiwango cha Chini',
+    'bei_jumla'            => 'Bei ya Jumla',
+    'stock_ndogo'          => 'Stoku Ndogo',
+
+    // Wasambazaji
+    'wasambazaji'          => 'Wasambazaji',
+    'msambazaji'           => 'Msambazaji',
+    'ongeza_msambazaji'    => 'Ongeza Msambazaji',
+    'hariri_msambazaji'    => 'Hariri Msambazaji',
+    'bidhaa_wanazouza'     => 'Bidhaa Wanazouza',
+    'jumla_manunuzi'       => 'Jumla ya Manunuzi',
+    'historia_manunuzi'    => 'Historia ya Manunuzi',
+
+    // Manunuzi
+    'manunuzi'             => 'Manunuzi ya Stoku',
+    'ongeza_ununuzi'       => 'Rekodi Ununuzi',
+    'bei_ya_kununulia'     => 'Bei ya Kununulia',
+    'jumla'                => 'Jumla',
+
+    // Matumizi
+    'matumizi'             => 'Matumizi',
+    'ongeza_matumizi'      => 'Ongeza Matumizi',
+    'hariri_matumizi'      => 'Hariri Matumizi',
+    'kichwa'               => 'Kichwa',
+    'kiasi'                => 'Kiasi',
+
+    // Madeni
+    'madeni'               => 'Madeni / Mikopo',
+    'ongeza_deni'          => 'Rekodi Deni',
+    'deni'                 => 'Deni',
+    'malipo'               => 'Malipo',
+    'aina'                 => 'Aina',
+    'haijalipiwa'          => 'Haijalipiwa',
+    'imelipwa'             => 'Imelipwa',
+    'mteja'                => 'Mteja',
+
+    // Kichwa cha sehemu
+    'usimamizi_hali'       => 'Usimamizi wa Hali',
+
+    // Nyongeza za Dashibodi
+    'stock_za_chini'       => 'Stoku Ndogo',
+    'madeni_yanayosubiri'  => 'Madeni Yanayosubiri',
+    'matumizi_mwezi'       => 'Matumizi ya Mwezi',
+    'faida_halisi'         => 'Faida Halisi',
 ];

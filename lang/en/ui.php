@@ -101,4 +101,52 @@ return [
     'hakuna_arifa'         => 'No notifications',
     'ona_maswali_yote'     => 'See all inquiries →',
     'bidhaa_imesimamishwa' => 'Product Suspended',
+
+    // Stock
+    'idadi_bidhaa'         => 'Stock Qty',
+    'kitengo'              => 'Unit',
+    'idadi_ya_chini'       => 'Min Stock Alert',
+    'bei_jumla'            => 'Wholesale Price',
+    'stock_ndogo'          => 'Low Stock',
+
+    // Wasambazaji (Suppliers)
+    'wasambazaji'          => 'Suppliers',
+    'msambazaji'           => 'Supplier',
+    'ongeza_msambazaji'    => 'Add Supplier',
+    'hariri_msambazaji'    => 'Edit Supplier',
+    'bidhaa_wanazouza'     => 'Products They Sell',
+    'jumla_manunuzi'       => 'Total Purchases',
+    'historia_manunuzi'    => 'Purchase History',
+
+    // Manunuzi (Stock Purchases)
+    'manunuzi'             => 'Restocking',
+    'ongeza_ununuzi'       => 'Add Purchase',
+    'bei_ya_kununulia'     => 'Purchase Price',
+    'jumla'                => 'Total',
+
+    // Matumizi (Expenses)
+    'matumizi'             => 'Expenses',
+    'ongeza_matumizi'      => 'Add Expense',
+    'hariri_matumizi'      => 'Edit Expense',
+    'kichwa'               => 'Title',
+    'kiasi'                => 'Amount',
+
+    // Madeni (Debts)
+    'madeni'               => 'Debts / Credit',
+    'ongeza_deni'          => 'Add Debt',
+    'deni'                 => 'Debt',
+    'malipo'               => 'Payment',
+    'aina'                 => 'Type',
+    'haijalipiwa'          => 'Unpaid',
+    'imelipwa'             => 'Paid',
+    'mteja'                => 'Customer',
+
+    // Section label
+    'usimamizi_hali'       => 'Operations',
+
+    // Dashboard additions
+    'stock_za_chini'       => 'Low Stock Alerts',
+    'madeni_yanayosubiri'  => 'Outstanding Debts',
+    'matumizi_mwezi'       => 'Monthly Expenses',
+    'faida_halisi'         => 'Net Profit',
 ];

@@ -9,13 +9,17 @@ use Illuminate\Support\Facades\Storage;
 class BidhaaController extends Controller
 {
     private array $validationRules = [
-        'jina'       => 'required|string|max:255',
-        'maelezo'    => 'nullable|string',
-        'picha'      => 'nullable|image|max:2048',
-        'bei_halisi' => 'required|numeric|min:0',
-        'bei_yangu'  => 'required|numeric|min:0',
-        'kategoria'  => 'nullable|string|max:100',
-        'hali'       => 'required|in:inapatikana,imeuzwa,imesimamishwa',
+        'jina'           => 'required|string|max:255',
+        'maelezo'        => 'nullable|string',
+        'picha'          => 'nullable|image|max:2048',
+        'bei_halisi'     => 'required|numeric|min:0',
+        'bei_yangu'      => 'required|numeric|min:0',
+        'bei_jumla'      => 'nullable|numeric|min:0',
+        'kategoria'      => 'nullable|string|max:100',
+        'hali'           => 'required|in:inapatikana,imeuzwa,imesimamishwa',
+        'idadi'          => 'required|integer|min:0',
+        'kitengo'        => 'required|string|max:50',
+        'idadi_ya_chini' => 'nullable|integer|min:0',
     ];
 
     public function index(Request $request)
