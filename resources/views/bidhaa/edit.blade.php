@@ -54,6 +54,50 @@
                 </div>
             </div>
 
+            <!-- Stock Management -->
+            <div class="border-t border-gray-100 pt-4">
+                <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">
+                    {{ app()->getLocale() === 'sw' ? 'Usimamizi wa Stoku' : 'Stock Management' }}
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">{{ __('ui.idadi_bidhaa') }}</label>
+                        <input type="number" name="idadi" value="{{ old('idadi', $bidhaa->idadi) }}" min="0" step="1"
+                               class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"/>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">{{ __('ui.kitengo') }}</label>
+                        <input type="text" name="kitengo" value="{{ old('kitengo', $bidhaa->kitengo ?? 'kipande') }}"
+                               list="kitengo-list"
+                               class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"/>
+                        <datalist id="kitengo-list">
+                            <option value="kipande">
+                            <option value="kg">
+                            <option value="dozi">
+                            <option value="karton">
+                            <option value="lita">
+                            <option value="mfuko">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 mt-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">{{ __('ui.idadi_ya_chini') }}</label>
+                        <input type="number" name="idadi_ya_chini" value="{{ old('idadi_ya_chini', $bidhaa->idadi_ya_chini) }}" min="0" step="1"
+                               placeholder="{{ app()->getLocale() === 'sw' ? 'Mfano: 5' : 'e.g. 5' }}"
+                               class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"/>
+                        <p class="text-xs text-gray-400 mt-1">{{ app()->getLocale() === 'sw' ? 'Arifa itatoka stoku ikipungua hadi hapa' : 'Alert when stock drops to this level' }}</p>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">{{ __('ui.bei_jumla') }} (TZS)</label>
+                        <input type="number" name="bei_jumla" value="{{ old('bei_jumla', $bidhaa->bei_jumla) }}" min="0" step="0.01"
+                               placeholder="{{ app()->getLocale() === 'sw' ? 'Hiari' : 'Optional' }}"
+                               class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"/>
+                        <p class="text-xs text-gray-400 mt-1">{{ app()->getLocale() === 'sw' ? 'Bei kwa wanunuzi wa jumla' : 'Price for wholesale buyers' }}</p>
+                    </div>
+                </div>
+            </div>
+
             <div>
                 <label class="block text-sm font-medium text-gray-700 mb-1">{{ __('ui.hali') }} *</label>
                 <select name="hali" class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-indigo-400">
